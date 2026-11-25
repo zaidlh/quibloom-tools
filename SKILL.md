@@ -24,7 +24,7 @@ them with any text-to-speech provider or a human voice.
 - Hook intro: the logo spins in, then "15 QUESTIONS", "NO SECOND CHANCES",
   three "?" dots, and a yellow "LET'S FIND OUT" pill.
 - Question loop, 15 times:
-  1. A category pill (for example SPACE) and the question text fade in.
+  1. A category pill (for example ANIMALS) and the question text fade in.
   2. The narrator reads the question and the four options.
   3. Each option card slides in from the left exactly when the narrator
      says it, with a pop sound. The card pulses while it is being read.
@@ -33,7 +33,7 @@ them with any text-to-speech provider or a human voice.
      a tick each second.
   5. Reveal: the bar turns green, the correct card turns green with a
      drawn checkmark and a sparkle burst, wrong options dim, and a ding
-     plays. The narrator says the answer ("C is correct, Mercury.").
+     plays. The narrator says the answer ("B is correct, Dolphin.").
   6. Short beat, then the next question.
 - Outro: "WHAT IS YOUR SCORE? ? / 15", animated LIKE and SHARE buttons,
   then a SUBSCRIBE button that flips to SUBSCRIBED.
@@ -74,19 +74,19 @@ not included):
 ```json
 {
   "video": 1,
-  "topic": "Space",
-  "category": "SPACE",
+  "topic": "Animals",
+  "category": "ANIMALS",
   "hook": "Fifteen questions, no second chances. Can you score fifteen out of fifteen? Let us find out.",
   "questions": [
     {
       "n": 1,
-      "question": "Which planet is closest to the Sun?",
-      "options": ["Venus", "Earth", "Mercury", "Mars"],
-      "correct_index": 2,
-      "answer_letter": "C",
-      "question_speech": "Question one. Which planet is closest to the Sun? A. Venus. B. Earth. C. Mercury. D. Mars.",
-      "answer_speech": "C is correct, Mercury.",
-      "source": "https://science.nasa.gov/mercury/"
+      "question": "Which animal is a mammal?",
+      "options": ["Shark", "Dolphin", "Crocodile", "Trout"],
+      "correct_index": 1,
+      "answer_letter": "B",
+      "question_speech": "Question one. Which animal is a mammal? A. Shark. B. Dolphin. C. Crocodile. D. Trout.",
+      "answer_speech": "B is correct, Dolphin.",
+      "source": "https://en.wikipedia.org/wiki/Mammal"
     }
   ]
 }
